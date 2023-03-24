@@ -1,17 +1,15 @@
 .catalog {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax($card-width, 1fr));
-  gap: 48px;
-  justify-items: start;
-  align-items: stretch;
   grid-auto-columns: $card-width;
   grid-auto-rows: $card-height;
+  grid-gap: 48px;
+  justify-items: start;
+  align-items: stretch;
 
   &__card {
-    justify-self: center;
-    align-self: stretch;
     width: $card-width;
-    height: $card-height;
+    justify-self: stretch;
+    align-self: stretch;
     border: 1px solid #ccc;
     border-radius: 5px;
   }
@@ -19,24 +17,24 @@
 
 @media (max-width: 488px) {
   .catalog {
-    grid-template-columns: repeat(1, minmax($card-width, 1fr));
+    grid-template-columns: repeat(1, $card-width);
   }
 }
 
 @media screen and (min-width: 488px) and (max-width: 768px) {
   .catalog {
-    grid-template-columns: repeat(2, minmax($card-width, 1fr));
+    grid-template-columns: repeat(2, $card-width);
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .catalog {
-    grid-template-columns: repeat(3, minmax($card-width, 1fr));
+    grid-template-columns: repeat(3, $card-width);
   }
 }
 
 @media (min-width: 1024px) {
   .catalog {
-    grid-template-columns: repeat(4, minmax($card-width, 1fr));
+    grid-template-columns: repeat(4, $card-width);
   }
 }
