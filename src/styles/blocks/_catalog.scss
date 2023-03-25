@@ -7,8 +7,8 @@
 
   &__card {
     width: $card-width;
-    justify-self: stretch;
-    align-self: stretch;
+    display: grid;
+    place-items: center;
     border: 1px solid #ccc;
     border-radius: 5px;
   }
