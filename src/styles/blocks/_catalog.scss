@@ -3,8 +3,7 @@
   grid-auto-columns: $card-width;
   grid-auto-rows: $card-height;
   grid-gap: 48px;
-  justify-items: start;
-  align-items: stretch;
+  justify-content: center;
 
   &__card {
     width: $card-width;
